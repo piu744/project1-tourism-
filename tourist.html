@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<style>
+		body{
+			background-color:rgb(214, 245, 245);
+		}
+	
+		h1{
+			text-align:center;
+			background: #7eafc1;
+			background-image: linear-gradient(90deg, red, blue);
+			color:transparent;
+			background-clip:text;
+			font-size:50px;
+			font-family:comic sans ms;
+			
+		}
+		hr{
+			width:100px;
+			animation: animohr 2s infinite alternate ease-in-out;
+		}
+		@keyframes animohr{
+		
+			0%{ width:0px; border-color:teal;}
+			100%{ width:700px;}
+		}
+		h2{
+			text-align:center;
+			background-color:teal;
+			width:300px;
+			margin-left:500px;
+			color:white;
+			border-radius:6px;
+		}
+		
+		.opt{
+		 border:1px solid black;
+		 width:900px;
+		 height:30px;
+		 background-color:teal;
+		 color:white;
+		 font-size:20px;
+		 font-family:comic sans ms;
+		 text-align:center;
+		 border-radius:5px;
+		 }
+		 #viewdiv{
+			height:300px;
+			background: #7eafc1;
+			background-image: linear-gradient(160deg, #fff7fb, #efe7f2, #dbd8ea, #bfc9e2, #98b9d9, #6aa8cf, #4096c0, #1987a0, #047877, #016353, #016353);
+			border-radius:7px;
+			margin:auto;	
+			
+		 }
+		 #t2{
+			text-align:center;
+			margin:auto;
+			padding-top:5px;
+		 }
+			
+		.point{
+				margin:auto;
+				font-size:20px;
+				font-family:comic sans ms;
+				text-align:center;
+				/* mborder:5px solid black; */
+		}
+		.point:hover{
+			box-shadow:0px 0px 20px black;
+			border-radius:15px;
+			cursor:pointer;
+		}
+		/* td{
+			border:5px solid black;
+		} */
+		 
+		 img{
+		 
+			height:210px;
+			width:210px;
+			margin:10px 15px;
+			border:3px solid black;
+			border-radius:15px;
+			padding:2px;
+		 }
+		 img:hover{
+		 
+			cursor:pointer;
+			width:205px;
+			border:3px solid lavender;
+		 }
+		 
+		 #daydiv{
+		 
+			border:1px solid black;
+		 }
+		 #details{
+			border:2px solid black;
+			border-radius:5px;
+			margin-top:6px;
+			background: #4a7d70;
+			background-image: linear-gradient(90deg, #440154, #482475, #414487, #355f8d, #2a788e, #21908d, #22a884, #42be71, #7ad151, #bddf26, #bddf26);
+			display:grid;
+			grid-template-columns:25% auto 25%;
+			grid-template-rows:250px;
+			
+		 }
+		
+		#details div{
+			display:grid;
+			border:1px solid black;
+			padding:5px;
+			padding-top:0;
+			height:;
+			grid-template-rows:10% auto 10%;
+		}
+		#details h3{
+			text-align:center;
+			margin:0px;
+			padding:15px;
+			font-size:25px;
+			color:white;
+			text-shadow:1px 1px black, -1px -1px black, -1px 1px black, 1px -1px black;
+		}
+		#details h3:hover{
+			cursor:pointer;
+			color:black;
+			text-shadow:1px 1px white, -1px -1px white, -1px 1px white, 1px -1px white;
+		}
+		
+		#details div>p{
+			padding:10px;
+			font-size:17px;
+		}
+		#details div>p:hover{
+		
+		}	
+		#details div>button{
+			width:100px;
+			text-align:center;
+			margin-left:40%;
+			border-radius:5px;
+			font-size:15px;
+		}
+		#details div:hover{
+		
+			cursor:pointer;
+			box-shadow:0px 10px 80px black inset;
+			color:white;
+		}
+		
+	
+	</style>
+	<body>
+		
+		<table>
+			<tr>
+				<td class="opt">option1</td>
+				<td class="opt">option2</td>
+				<td class="opt">option3</td>
+				<td class="opt">option4</td>
+			</tr>
+		</table>
+		<h1>KOLKATA</h1>
+		<hr>
+		<h2>The City Of Joy</h2>
+		<div id="viewdiv">
+			<table id="t2">
+				<tr>
+					<th class="point">View Point 1</th>
+					<th class="point">View Point 2</th>
+					<th class="point">View Point 3</th>
+					<th class="point">View Point 4</th>
+					<th class="point">View Point 5</th>
+				</tr>
+				<tr>
+				<td><img src="tourism.jpg"></td>
+				<td><img src="tourism.jpg"></td>
+				<td><img src="tourism.jpg"></td>
+				<td><img src="tourism.jpg"></td>
+				<td><img src="tourism.jpg"></td>
+				</tr>
+			</table>
+		</div>
+		<div id="details">
+			<div class="dayplan" id="left">
+				<h3>Yesterday</h3>
+				<p>bsdsh jkwehweh jwkejwhfw nwehrfweh b hwehw wejhowqhejkqn nwedwqh nweqwn.
+				bsdsh jkwehweh jwkejwhfw nwehrfweh b hwehw wejhowqhejkqn nwedwqh nweqwn.
+				bsdsh jkwehweh jwkejwhfw nwehrfweh b hwehw wejhowqhejkqn nwedwqh nweqwn.</p>
+				<button id="leftButton" onclick="leftClick()">Read more</button>
+			</div>		
+			<div class="dayplan" id="center">
+				<h3>Today</h3>
+				<p>bsdsh jkwehweh jwkejwhfw nwehrfweh b hwehw wejhowqhejkqn nwedwqh nweqwn.
+				bsdsh jkwehweh jwkejwhfw nwehrfweh b hwehw wejhowqhejkqn nwedwqh nweqwn.
+				bsdsh jkwehweh jwkejwhfw nwehrfweh b hwehw wejhowqhejkqn nwedwqh nweqwn.bsdsh jkwehweh jwkejwhfw nwehrfweh b hwehw wejhowqhejkqn nwedwqh nweqwn.
+				bsdsh jkwehweh jwkejwhfw nwehrfweh</p>
+			<button id="centerButton"  onclick="centerClick()">Read more</button>
+			</div>		
+			<div class="dayplan" id="right">
+				<h3>Tommorow</h3>
+				<p>bsdsh jkwehweh jwkejwhfw nwehrfweh b hwehw wejhowqhejkqn nwedwqh nweqwn.
+				bsdsh jkwehweh jwkejwhfw nwehrfweh b hwehw wejhowqhejkqn nwedwqh nweqwn.
+				bsdsh jkwehweh jwkejwhfw nwehrfweh b hwehw wejhowqhejkqn nwedwqh nweqwn.</p>
+				<button id="rightButton"  onclick="rightClick()">Read more</button>
+			</div>
+		</div>
+		<div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
